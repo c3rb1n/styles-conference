@@ -69,6 +69,12 @@ body {
     height: 308px;
 }
 
+.speakers-row {
+    height: 852px;
+    background: #fff;
+    padding-top: 66px;
+}
+
 .row-alt {
     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
     padding: 44px 0 22px;
@@ -216,6 +222,20 @@ a:hover {
 
 /*
   ========================================
+  Спикеры
+  ========================================
+*/
+
+.speaker-info {
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 22px 0;
+    text-align: center;
+}
+
+/*
+  ========================================
   Основной заголовок
   ========================================
 */
@@ -252,11 +272,10 @@ a:hover {
 */
 
 .primary-footer {
-    clear: left;
     color: #648880;
     font-size: 14px;
     padding-top: 44px;
-    padding-bottom: 44px;
+    padding-bottom: 55px;
 }
 
 .primary-footer small {
@@ -279,4 +298,17 @@ a:hover {
 
 .nav {
     text-align: right;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav li {
+    float: left;
+    margin: 0 10px;
+}
+
+.nav li:last-child {
+    margin-right: 0;
 }
