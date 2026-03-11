@@ -7,11 +7,11 @@
 */
 
 body {
-    background: #293f50;
+    background-color: #293f50;
     color: #888;
     font-family: Roboto, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
     line-height: 22px;
 }
 
@@ -27,8 +27,8 @@ body {
 
 .container,
 .grid {
-    margin: 0 auto;
     width: 960px;
+    margin: 0 auto;
 }
 
 .container {
@@ -64,22 +64,29 @@ body {
 */
 
 .row {
-    background: #fff;
-    padding: 66px 0 44px;
     height: 526px;
+    background-color: #fff;
+    padding: 66px 0 44px;
 }
 
 .speakers-row {
     height: 852px;
-    background: #fff;
+    background-color: #fff;
     padding-top: 66px;
 }
 
 .theatre-row {
     height: 550px;
-    background: #fff;
+    background-color: #fff;
     padding-top: 66px;
 }
+
+.register-row {
+    height: 572px;
+    background-color: #fff;
+    padding-top: 66px;
+}
+
 
 .row-alt {
     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
@@ -185,13 +192,24 @@ a:hover {
 }
 
 .btn-alt {
-    border: 1px solid #fff;
     padding: 10px 30px;
+    border: 1px solid #fff;
 }
 
 .btn-alt:hover {
-    background: #fff;
+    background-color: #fff;
     color: #648880;
+}
+
+.btn-default {
+    background-color: #648880;
+    font-size: 14px;
+    padding: 11px 30px;
+    border: 0;
+}
+
+.btn-default:hover {
+    background-color: #77a198;
 }
 
 /*
@@ -240,18 +258,18 @@ a:hover {
 */
 
 .speaker-info {
+    text-align: center;
     padding-bottom: 22px;
     border: 1px solid #dfe2e5;
     border-radius: 5px;
     margin-top: 88px;
-    text-align: center;
 }
 
 .speaker-info img {
-    border-radius: 50%;
     height: 130px;
-    margin: -66px 0 22px;
     vertical-align: top;
+    border-radius: 50%;
+    margin: -66px 0 22px;
 }
 
 /*
@@ -271,6 +289,61 @@ a:hover {
 
 /*
   ========================================
+  Регистрация
+  ========================================
+*/
+
+.why-attend {
+    list-style: square;
+    margin: 0 0 22px 30px;
+}
+
+form {
+    margin-bottom: 22px;
+}
+
+input,
+select,
+textarea {
+    font-family: Roboto, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.register-group label {
+    color: #648880;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.register-group input,
+.register-group select,
+.register-group textarea {
+    display: block;
+    color: #888;
+    padding: 5px 8px;
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    margin: 5px 0 27px;
+}
+
+.register-group input,
+.register-group textarea {
+    width: 100%;
+}
+
+.register-group select {
+    width: 60px;
+    height: 34px;
+}
+
+.register-group textarea {
+    height: 78px;
+}
+
+/*
+  ========================================
   Основной заголовок
   ========================================
 */
@@ -286,15 +359,15 @@ a:hover {
 }
 
 .primary-header {
-    margin-bottom: 44px;
+    min-height: 176px;
 }
 
 .logo {
     float: left;
     font-size: 48px;
     font-weight: 100;
-    letter-spacing: .5px;
     line-height: 44px;
+    letter-spacing: .5px;
     text-transform: uppercase;
     padding: 40px 0 22px;
     border-top: 4px solid #648880;
