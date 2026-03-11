@@ -12,96 +12,110 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <header class="primary-header container">
-            <h1 class="logo">
-                <a href="index.html">
-                    Styles
+    <body class="page">
+        <header class="header page__inner">
+            <h1 class="header__logo">
+                <a class="link header__link" href="index.html">
+                    STYLES
                     <br />
-                    Conference
+                    CONFERENCE
                 </a>
             </h1>
-            <h3 class="tagline">24&ndash;26 августа &mdash; Чикаго, штат Иллинойс</h3>
-            <nav class="nav primary-nav">
-                <ul>
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="speakers.html">Спикеры</a>
-                    </li>
-                    <li>
-                        <a href="schedule.html">Расписание</a>
-                    </li>
-                    <li>
-                        <a href="venue.html">Место проведения</a>
-                    </li>
-                    <li>
-                        <a href="register.html">Регистрация</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="hero container">
-            <h2>Посвящается ремеслу создания сайтов</h2>
-            <p>
-                Каждый год самые яркие веб-дизайнеры и фронтенд-разработчики собираются в Чикаго, чтобы обсудить
-                новейшие технологии. Присоединяйся к нам этим августом!
-            </p>
-            <a class="btn btn-alt" href="register.html">Зарегистрируйтесь сейчас</a>
-        </section>
-        <section class="row">
-            <div class="grid">
-                <section class="teaser col-1-3">
-                    <h5>Спикеры</h5>
-                    <a href="speakers.html">
-                        <img src="assets/images/home/speakers.jpg" alt="Профессиональные спикеры" />
-                        <h3>Спикеры мирового класса</h3>
-                    </a>
-                    <p>
-                        К нам приедут более двадцати фантастических спикеров со всего мира, чтобы поделиться своими
-                        историями.
-                    </p>
-                </section>
-                <section class="teaser col-1-3">
-                    <h5>Расписание</h5>
-                    <a href="schedule.html">
-                        <img src="assets/images/home/schedule.jpg" alt="Участники конференции" />
-                        <h3>Три вдохновляющих дня</h3>
-                    </a>
-                    <p>
-                        Наслаждайтесь тремя вдохновляющими и насыщенными событиями днями переговоров, встреч и всем
-                        хорошим вокруг.
-                    </p>
-                </section>
-                <section class="teaser col-1-3">
-                    <h5>Место проведения</h5>
-                    <a href="venue.html">
-                        <img src="assets/images/home/venue.jpg" alt="Театр Чикаго" />
-                        <h3>Театр Чикаго</h3>
-                    </a>
-                    <p>Театр Чикаго в самом центре города обеспечит красивое место проведения конференции.</p>
-                </section>
+            <div>
+                <h3 class="header__description">24&ndash;26 августа &mdash; Чикаго, штат Иллинойс</h3>
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="link nav__link" href="index.html">ГЛАВНАЯ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="speakers.html">СПИКЕРЫ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="schedule.html">РАСПИСАНИЕ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="venue.html">МЕСТО ПРОВЕДЕНИЯ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="register.html">РЕГИСТРАЦИЯ</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-        <footer class="primary-footer container">
-            <small>&copy; Styles Conference</small>
+        </header>
+        <main class="main-page">
+            <section class="register-offer page__inner">
+                <h2 class="register-offer__header">Посвящается ремеслу создания сайтов</h2>
+                <p class="register-offer__description">
+                    Каждый год самые яркие веб-дизайнеры и фронтенд-разработчики собираются в Чикаго, чтобы обсудить
+                    новейшие технологии. Присоединяйся к нам этим августом!
+                </p>
+                <a class="link btn btn__main" href="register.html">ЗАРЕГИСТРИРУЙТЕСЬ СЕЙЧАС</a>
+            </section>
+            <section class="content">
+                <div class="teasers page__inner">
+                    <section class="teaser col-1-3">
+                        <h5 class="teaser__header">СПИКЕРЫ</h5>
+                        <a class="teaser__link link" href="speakers.html">
+                            <img
+                                class="teaser__img"
+                                src="assets/images/home/speakers.jpg"
+                                alt="Профессиональные спикеры"
+                            />
+                            <h3>Спикеры мирового класса</h3>
+                        </a>
+                        <p class="teaser__description">
+                            К нам приедут более двадцати фантастических спикеров со всего мира, чтобы поделиться своими
+                            историями.
+                        </p>
+                    </section>
+                    <section class="teaser col-1-3">
+                        <h5 class="teaser__header">РАСПИСАНИЕ</h5>
+                        <a class="teaser__link link" href="schedule.html">
+                            <img
+                                class="teaser__img"
+                                src="assets/images/home/schedule.jpg"
+                                alt="Участники конференции"
+                            />
+                            <h3>Три вдохновляющих дня</h3>
+                        </a>
+                        <p class="teaser__description">
+                            Наслаждайтесь тремя вдохновляющими и насыщенными событиями днями переговоров, встреч и всем
+                            хорошим вокруг.
+                        </p>
+                    </section>
+                    <section class="teaser col-1-3">
+                        <h5 class="teaser__header">МЕСТО ПРОВЕДЕНИЯ</h5>
+                        <a class="teaser__link link" href="venue.html">
+                            <img class="teaser__img" src="assets/images/home/venue.jpg" alt="Театр Чикаго" />
+                            <h3>Театр Чикаго</h3>
+                        </a>
+                        <p class="teaser__description">
+                            Театр Чикаго в самом центре города обеспечит красивое место проведения конференции.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer class="footer page__inner">
+            <small class="footer__copyright">&copy; Styles Conference</small>
             <nav class="nav">
-                <ul>
+                <ul class="nav__list">
                     <li>
-                        <a href="index.html">Главная</a>
+                        <a class="link nav__link" href="index.html">Главная</a>
                     </li>
                     <li>
-                        <a href="speakers.html">Спикеры</a>
+                        <a class="link nav__link" href="speakers.html">Спикеры</a>
                     </li>
                     <li>
-                        <a href="schedule.html">Расписание</a>
+                        <a class="link nav__link" href="schedule.html">Расписание</a>
                     </li>
                     <li>
-                        <a href="venue.html">Место проведения</a>
+                        <a class="link nav__link" href="venue.html">Место проведения</a>
                     </li>
                     <li>
-                        <a href="register.html">Регистрация</a>
+                        <a class="link nav__link" href="register.html">Регистрация</a>
                     </li>
                 </ul>
             </nav>
