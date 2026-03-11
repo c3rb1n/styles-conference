@@ -25,6 +25,11 @@ body {
     margin: 0 auto;
 }
 
+.page__main-offer {
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 44px 0 22px;
+}
+
 /*
   ========================================
   1.1. Ссылки
@@ -132,7 +137,30 @@ body {
 
 /*
   ========================================
-  1.5. Контент
+  1.5. Рекламный текст
+  ========================================
+*/
+
+.main-offer {
+    text-align: center;
+}
+
+.main-offer__header {
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--main-color);
+    margin-bottom: 22px;
+}
+
+.main-offer__description {
+    font-size: 21px;
+    line-height: 33px;
+    margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  1.6. Контент
   ========================================
 */
 
@@ -143,7 +171,7 @@ body {
 
 /*
   ========================================
-  1.6. Подвал
+  1.7. Подвал
   ========================================
 */
 
@@ -213,4 +241,56 @@ body {
 
 .teaser__description {
     margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  Спикеры
+  ========================================
+*/
+
+.speaker {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.speaker__info {
+    width: 66.66%;
+}
+
+.speaker__header {
+    font-size: 24px;
+    line-height: 44px;
+    color: var(--main-color);
+}
+
+.speaker__subheader {
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.speaker__description {
+    margin-bottom: 22px;
+}
+
+.speaker__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 284px;
+    border: 1px solid var(--speakers-border-color);
+    padding-bottom: 22px;
+    border-radius: 5px;
+    margin-top: 88px;
+}
+
+.speaker__img {
+    height: 130px;
+    vertical-align: top;
+    border-radius: 50%;
+    margin: -66px 0 22px;
 }
