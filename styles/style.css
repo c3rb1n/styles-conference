@@ -1,23 +1,9 @@
+@import 'variables.css';
 @import 'reset.css';
 
 /*
   ========================================
-  Пользовательские стили
-  ========================================
-*/
-
-body {
-    background-color: #293f50;
-    color: #888;
-    font-family: Roboto, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-}
-
-/*
-  ========================================
-  Сетка
+  1. Базовая разметка
   ========================================
 */
 
@@ -25,482 +11,206 @@ body {
     box-sizing: border-box;
 }
 
-.container,
-.grid {
-    width: 960px;
-    margin: 0 auto;
-}
-
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-    clear: left;
-}
-
-.grid,
-.col-1-3,
-.col-2-3 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.col-1-3,
-.col-2-3 {
-    float: left;
-}
-
-.col-1-3 {
-    width: 33.33%;
-}
-
-.col-2-3 {
-    width: 66.66%;
-}
-
-/*
-  ========================================
-  Полосы
-  ========================================
-*/
-
-.row {
-    height: 526px;
-    background-color: #fff;
-    padding: 66px 0 44px;
-}
-
-.speakers-row {
-    height: 852px;
-    background-color: #fff;
-    padding-top: 66px;
-}
-
-.schedule-row {
-    height: 2442px;
-    background-color: #fff;
-    padding-top: 66px;
-}
-
-.theatre-row {
-    height: 550px;
-    background-color: #fff;
-    padding-top: 66px;
-}
-
-.register-row {
-    height: 572px;
-    background-color: #fff;
-    padding-top: 66px;
-}
-
-
-.row-alt {
-    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-    padding: 44px 0 22px;
-}
-
-/*
-  ========================================
-  Типографика
-  ========================================
-*/
-
-h1, h3, h4, h5, p {
-    margin-bottom: 22px;
-}
-
-h1, h2, h3, h4 {
-    color: #648880;
-}
-
-h1 {
-    font-size: 36px;
-    line-height: 44px;
-}
-
-h2 {
-    font-size: 24px;
-    line-height: 44px;
-}
-
-h3 {
-    font-size: 21px;
-}
-
-h4 {
-    font-size: 18px;
-}
-
-h5 {
-    color: #a9b2b9;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-strong {
-    font-weight: 400;
-}
-
-cite, em {
-    font-style: italic;
-}
-
-/*
-  ========================================
-  Вступление
-  ========================================
-*/
-
-.lead {
-    text-align: center;
-}
-
-.lead p {
-    font-size: 21px;
-    line-height: 33px;
-}
-
-/*
-  ========================================
-  Ссылки
-  ========================================
-*/
-
-a {
-    color: #648880;
-    text-decoration: none;
-}
-
-p a {
-    border-bottom: 1px solid #dfe2e5;
-}
-
-table a {
-    color: #888;
-}
-
-a:hover {
-    color: #a9b2b9;
-}
-
-/*
-  ========================================
-  Кнопки
-  ========================================
-*/
-
-.btn {
-    display: inline-block;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 400;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    margin: 0;
-}
-
-.btn-alt {
-    padding: 10px 30px;
-    border: 1px solid #fff;
-}
-
-.btn-alt:hover {
-    background-color: #fff;
-    color: #648880;
-}
-
-.btn-default {
-    background-color: #648880;
-    font-size: 14px;
-    padding: 11px 30px;
-    border: 0;
-}
-
-.btn-default:hover {
-    background-color: #77a198;
-}
-
-/*
-  ========================================
-  Главная страница
-  ========================================
-*/
-
-.hero {
-    color: #fff;
-    line-height: 44px;
-    text-align: center;
-    padding: 22px 80px 66px;
-}
-
-.hero h2 {
-    font-size: 36px;
-}
-
-.hero p {
-    font-size: 24px;
-    font-weight: 100;
-}
-
-.tagline {
-    padding: 66px 0 22px;
-    margin: 0;
-    text-align: right;
-}
-
-.teaser a:hover h3 {
-    color: #a9b2b9;
-}
-
-.teaser img {
-    display: block;
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 22px;
-}
-
-/*
-  ========================================
-  Спикеры
-  ========================================
-*/
-
-.speaker-info {
-    text-align: center;
-    padding-bottom: 22px;
-    border: 1px solid #dfe2e5;
-    border-radius: 5px;
-    margin-top: 88px;
-}
-
-.speaker-info img {
-    height: 130px;
-    vertical-align: top;
-    border-radius: 50%;
-    margin: -66px 0 22px;
-}
-
-/*
-  ========================================
-  Расписание
-  ========================================
-*/
-
-table {
-    width: 100%;
-    margin-bottom: 44px;
-}
-
-table:last-child {
-    margin-bottom: 0;
-}
-
-th,
-td {
-    vertical-align: top;
-    padding-bottom: 22px;
-}
-
-th {
-    width: 20%;
-    text-align: right;
-    padding-right: 45px;
-}
-
-td {
-    width: 40%;
-}
-
-thead {
-    line-height: 44px;
-}
-
-thead th {
-    color: #648880;
-    font-size: 24px;
-}
-
-tbody th {
-    color: #a9b2b9;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-top: 22px;
-}
-
-tbody td {
-    padding-top: 21px;
-    border-top: 1px solid #dfe2e5;
-}
-
-tbody td:first-of-type {
-    padding-right: 15px;
-}
-
-tbody td:last-of-type {
-    padding-left: 15px;
-}
-
-tbody td:only-of-type {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-table h4 {
-    margin-bottom: 0;
-}
-
-.schedule-offset {
-    color: #a9b2b9;
-}
-
-/*
-  ========================================
-  Место проведения
-  ========================================
-*/
-
-.venue-theatre {
-    height: 176px;
-    margin-bottom: 66px;
-}
-
-.venue-hotel {
-    margin-bottom: 22px;
-}
-
-/*
-  ========================================
-  Регистрация
-  ========================================
-*/
-
-.why-attend {
-    list-style: square;
-    margin: 0 0 22px 30px;
-}
-
-form {
-    margin-bottom: 22px;
-}
-
-input,
-select,
-textarea {
+body {
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
     font-family: Roboto, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
 }
 
-.register-group label {
-    color: #648880;
-    cursor: pointer;
-    font-weight: 400;
-}
-
-.register-group input,
-.register-group select,
-.register-group textarea {
-    display: block;
-    color: #888;
-    padding: 5px 8px;
-    border: 1px solid #c6c9cc;
-    border-radius: 5px;
-    margin: 5px 0 27px;
-}
-
-.register-group input,
-.register-group textarea {
-    width: 100%;
-}
-
-.register-group select {
-    width: 60px;
-    height: 34px;
-}
-
-.register-group textarea {
-    height: 78px;
+.page__inner {
+    width: 900px;
+    margin: 0 auto;
 }
 
 /*
   ========================================
-  Основной заголовок
+  1.1. Ссылки
   ========================================
 */
 
-.primary-header a,
-.primary-footer a {
-    color: #fff;
+.link {
+    color: var(--main-color);
+    text-decoration: none;
 }
 
-.primary-header a:hover,
-.primary-footer a:hover {
-    color: #648880;
+.link:hover {
+    color: var(--third-color);
 }
 
-.primary-header {
-    min-height: 176px;
+.nav__link, .header__link {
+    color: var(--second-color);
 }
 
-.logo {
-    float: left;
+.nav__link:hover, .header__link:hover {
+    color: var(--main-color);
+}
+
+/*
+  ========================================
+  1.2. Кнопки
+  ========================================
+*/
+
+.btn {
+    display: inline-block;
+    color: var(--second-color);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .5px;
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+}
+
+.btn__main {
+    padding: 10px 30px;
+}
+
+.btn__main:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.btn__submit {
+    background-color: var(--main-color);
+    font-size: 14px;
+    padding: 11px 30px;
+    border: 0;
+}
+
+.btn__submit:hover {
+    background-color: var(--btn-submit-color-hover);
+}
+
+/*
+  ========================================
+  1.3. Шапка
+  ========================================
+*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--main-color);
+    padding-bottom: 44px;
+}
+
+.header__logo {
     font-size: 48px;
     font-weight: 100;
     line-height: 44px;
     letter-spacing: .5px;
-    text-transform: uppercase;
-    padding: 40px 0 22px;
-    border-top: 4px solid #648880;
+    border-top: 4px solid var(--main-color);
+    padding-top: 40px;
 }
 
-/*
-  ========================================
-  Основной подвал
-  ========================================
-*/
-
-.primary-footer {
-    color: #648880;
-    font-size: 14px;
-    padding-top: 44px;
-    padding-bottom: 55px;
+.header__description {
+    font-size: 21px;
+    text-align: right;
+    margin-bottom: 22px;
 }
 
-.primary-footer small {
-    float: left;
-    font-weight: 400;
-}
-
-/*
-  ========================================
-  Навигация
-  ========================================
-*/
-
-.primary-nav {
+.header__nav {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: .5px;
-    text-transform: uppercase;
 }
 
-.nav {
-    text-align: right;
+/*
+  ========================================
+  1.4. Навигация
+  ========================================
+*/
+
+.nav__list {
+    display: flex;
+    gap: 20px;
 }
 
-.nav ul {
-    float: right;
+/*
+  ========================================
+  1.5. Контент
+  ========================================
+*/
+
+.content {
+    background-color: var(--second-color);
+    padding: 66px 0 44px;
 }
 
-.nav li {
-    float: left;
-    margin: 0 10px;
+/*
+  ========================================
+  1.6. Подвал
+  ========================================
+*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-size: 14px;
+    padding: 44px 0;
 }
 
-.nav li:last-child {
-    margin-right: 0;
+.footer__copyright {
+    font-weight: 400;
+}
+
+/*
+  ========================================
+  2. Главная страница
+  ========================================
+*/
+
+.register-offer {
+    color: var(--second-color);
+    line-height: 44px;
+    text-align: center;
+    padding: 22px 80px 66px;
+}
+
+.register-offer__header {
+    color: var(--main-color);
+    font-size: 36px;
+}
+
+.register-offer__description {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 22px;
+}
+
+.teasers {
+    display: flex;
+    gap: 30px;
+}
+
+.teaser {
+    width: 33.33%;
+}
+
+.teaser__header {
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.teaser__link {
+    display: inline-block;
+    font-size: 21px;
+    margin-bottom: 22px;
+}
+
+.teaser__img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+.teaser__description {
+    margin-bottom: 22px;
 }
