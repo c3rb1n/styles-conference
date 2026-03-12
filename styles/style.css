@@ -368,3 +368,38 @@ body {
 .schedule-offset {
     color: var(--third-color);
 }
+
+/*
+  ========================================
+  5. Место проведения
+  ========================================
+*/
+
+.venue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.venue__theatre {
+    margin-bottom: 66px;
+}
+
+.venue__hotel {
+    margin-bottom: 22px;
+}
+
+.venue__header {
+    color: var(--main-color);
+    font-size: 24px;
+    line-height: 44px;
+}
+
+.venue__description {
+    margin-bottom: 22px;
+}
+
+.venue__map {
+    width: 66.66%;
+    height: 150px;
+    padding-left: 10px;
+}
