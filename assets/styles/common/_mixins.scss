@@ -1,0 +1,28 @@
+@mixin typography($fs, $fw, $lh, $ls, $ff) {
+    @if $fs {
+        font-size: $fs;
+    }
+
+    @if $fw {
+        font-weight: $fw;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $ls {
+        letter-spacing: 0.5px;
+    }
+
+    @if $ff {
+        font-family: Roboto, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+}
+
+@mixin h5-styles {
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}

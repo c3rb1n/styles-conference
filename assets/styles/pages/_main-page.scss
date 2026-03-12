@@ -1,0 +1,47 @@
+@use "../common/mixins" as *;
+
+.register-offer {
+    color: var(--second-color);
+    line-height: 44px;
+    text-align: center;
+    padding: 22px 80px 66px;
+
+    &__header {
+        color: var(--main-color);
+        font-size: 36px;
+    }
+
+    &__description {
+        @include typography(24px, 100, false, false, false);
+        margin-bottom: 22px;
+    }
+}
+
+.teasers {
+    display: flex;
+    gap: 30px;
+}
+
+.teaser {
+    width: 33.33%;
+
+    &__header {
+        @include h5-styles;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 21px;
+        margin-bottom: 22px;
+    }
+
+    &__img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 18px;
+    }
+
+    &__description {
+        margin-bottom: 22px;
+    }
+}

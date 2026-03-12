@@ -6,82 +6,90 @@
         <meta name="author" content="c3rb1n" />
         <meta name="description" content="Styles Conference register page" />
         <title>Styles Conference</title>
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/index.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
     </head>
-    <body>
-        <header class="primary-header container">
-            <h1 class="logo">
-                <a href="index.html">
-                    Styles
+    <body class="page">
+        <header class="header page__inner">
+            <h1 class="header__logo">
+                <a class="link header__link" href="index.html">
+                    STYLES
                     <br />
-                    Conference
+                    CONFERENCE
                 </a>
             </h1>
-            <h3 class="tagline">24&ndash;26 августа &mdash; Чикаго, штат Иллинойс</h3>
-            <nav class="nav primary-nav">
-                <ul>
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="speakers.html">Спикеры</a>
-                    </li>
-                    <li>
-                        <a href="schedule.html">Расписание</a>
-                    </li>
-                    <li>
-                        <a href="venue.html">Место проведения</a>
-                    </li>
-                    <li>
-                        <a href="register.html">Регистрация</a>
-                    </li>
-                </ul>
-            </nav>
+            <div>
+                <h3 class="header__description">24&ndash;26 августа &mdash; Чикаго, штат Иллинойс</h3>
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="link nav__link" href="index.html">ГЛАВНАЯ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="speakers.html">СПИКЕРЫ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="schedule.html">РАСПИСАНИЕ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="venue.html">МЕСТО ПРОВЕДЕНИЯ</a>
+                        </li>
+                        <li>
+                            <a class="link nav__link" href="register.html">РЕГИСТРАЦИЯ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <section class="row-alt">
-            <div class="lead container">
-                <h1>Регистрация</h1>
-                <p>
+        <section class="page__main-offer">
+            <div class="main-offer page__inner">
+                <h2 class="main-offer__header">Регистрация</h2>
+                <p class="main-offer__description">
                     Каждый год мы стремимся невероятно провести время и в этом году мы хотели бы чтобы вы присоединились
                     к нам. Вход на конференцию стоит всего лишь 99$ и это одна из лучших ценностей, которую вы найдёте.
                 </p>
             </div>
         </section>
-        <section class="register-row">
-            <div class="grid">
-                <section class="col-2-3">
-                    <h2>Закажи билет на конференцию</h2>
-                    <h5>$99 за билет</h5>
-                    <p>
+        <section class="content">
+            <div class="register page__inner">
+                <section class="register__info">
+                    <h2 class="register__header">Закажи билет на конференцию</h2>
+                    <h5 class="register__price">$99 ЗА БИЛЕТ</h5>
+                    <p class="register__description">
                         Приобретите билет на Styles Conference, используя форму справа. Можно приобрести сразу несколько
                         билетов, так что не стесняйтесь взять с собой друга или двух. После того, как ваш заказ будет
                         готов, мы свяжемся с вами и предоставим квитанцию за покупку. Скоро увидимся!
                     </p>
-                    <h4>Зачем участвовать?</h4>
-                    <ul class="why-attend">
+                    <h4 class="register__subheader">Зачем участвовать?</h4>
+                    <ul class="register__list">
                         <li>Более двадцати спикеров мирового класса</li>
                         <li>Один полный день мастер-классов и два полных дня презентаций</li>
                         <li>Состоится в Театре Чикаго, исторической достопримечательности</li>
                         <li>Август в Чикаго просто поражает</li>
                     </ul>
                 </section>
-                <form class="col-1-3" action="#" method="post">
-                    <fieldset class="register-group">
-                        <label>
+                <form class="register__form" action="#" method="post">
+                    <fieldset>
+                        <label class="register__label">
                             Имя
-                            <input type="text" name="name" placeholder="Полное имя" required />
+                            <input class="register__input" type="text" name="name" placeholder="Полное имя" required />
                         </label>
-                        <label>
+                        <label class="register__label">
                             Email
-                            <input type="email" name="email" placeholder="Адрес почты" required />
+                            <input
+                                class="register__input"
+                                type="email"
+                                name="email"
+                                placeholder="Адрес почты"
+                                required
+                            />
                         </label>
-                        <label>
+                        <label class="register__label">
                             Число билетов
-                            <select name="quantity" required>
+                            <select class="register__select" name="quantity" required>
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -89,33 +97,33 @@
                                 <option value="5">5</option>
                             </select>
                         </label>
-                        <label>
+                        <label class="register__label">
                             Комментарии
-                            <textarea name="comments"></textarea>
+                            <textarea class="register__textarea" name="comments"></textarea>
                         </label>
                     </fieldset>
-                    <input class="btn btn-default" type="submit" name="submit" value="Заказать" />
+                    <input class="btn btn__submit" type="submit" name="submit" value="ЗАКАЗАТЬ" />
                 </form>
             </div>
         </section>
-        <footer class="primary-footer container">
-            <small>&copy; Styles Conference</small>
+        <footer class="footer page__inner">
+            <small class="footer__copyright">&copy; Styles Conference</small>
             <nav class="nav">
-                <ul>
+                <ul class="nav__list">
                     <li>
-                        <a href="index.html">Главная</a>
+                        <a class="link nav__link" href="index.html">Главная</a>
                     </li>
                     <li>
-                        <a href="speakers.html">Спикеры</a>
+                        <a class="link nav__link" href="speakers.html">Спикеры</a>
                     </li>
                     <li>
-                        <a href="schedule.html">Расписание</a>
+                        <a class="link nav__link" href="schedule.html">Расписание</a>
                     </li>
                     <li>
-                        <a href="venue.html">Место проведения</a>
+                        <a class="link nav__link" href="venue.html">Место проведения</a>
                     </li>
                     <li>
-                        <a href="register.html">Регистрация</a>
+                        <a class="link nav__link" href="register.html">Регистрация</a>
                     </li>
                 </ul>
             </nav>
