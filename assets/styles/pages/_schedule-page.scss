@@ -1,0 +1,66 @@
+@use "../common/mixins" as *;
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+
+    &__th,
+    &__td {
+        padding-bottom: 22px;
+        vertical-align: top;
+    }
+
+    &__th {
+        text-align: right;
+        padding-right: 45px;
+    }
+
+    &__td {
+        width: 40%;
+    }
+
+    &__thead {
+        line-height: 44px;
+    }
+
+    &__thead-th {
+        color: var(--main-color);
+        font-size: 24px;
+    }
+
+    &__tbody-th {
+        @include typography(14px, 400, false, false, false);
+        color: var(--third-color);
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 22px;
+    }
+
+    &__tbody-td {
+        padding-top: 21px;
+        border-top: 1px solid var(--border-main-color);
+
+        &:first-of-type {
+            padding-right: 15px;
+        }
+
+        &:last-of-type {
+            padding-left: 15px;
+        }
+
+        &:only-of-type {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__header {
+        color: var(--main-color);
+        font-size: 18px;
+    }
+
+    &__offset {
+        color: var(--third-color);
+    }
+}

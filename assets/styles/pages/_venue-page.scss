@@ -1,0 +1,29 @@
+@use "../common/mixins" as *;
+
+.venue {
+    display: flex;
+    justify-content: space-between;
+
+    &__theatre {
+        margin-bottom: 66px;
+    }
+
+    &__hotel {
+        margin-bottom: 22px;
+    }
+
+    &__header {
+        @include typography(24px, false, 44px, false, false);
+        color: var(--main-color);
+    }
+
+    &__description {
+        margin-bottom: 22px;
+    }
+
+    &__map {
+        width: 66.66%;
+        height: 150px;
+        padding-left: 10px;
+    }
+}

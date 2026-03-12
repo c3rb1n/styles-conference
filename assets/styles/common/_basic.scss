@@ -1,0 +1,174 @@
+@use "mixins" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include typography(16px, 300, 22px, false, true);
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+
+.page {
+    &__inner {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    &__main-offer {
+        background: var(--main-offer-gradient);
+        padding: 44px 0 22px;
+    }
+}
+
+/*
+  ========================================
+  1. Ссылки
+  ========================================
+*/
+
+.link {
+    color: var(--main-color);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--third-color);
+    }
+}
+
+.nav__link,
+.header__link {
+    color: var(--second-color);
+}
+
+.nav__link:hover,
+.header__link:hover {
+    color: var(--main-color);
+}
+
+/*
+  ========================================
+  2. Кнопки
+  ========================================
+*/
+
+.btn {
+    @include typography(false, 400, false, true, false);
+    display: inline-block;
+    color: var(--second-color);
+    cursor: pointer;
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+
+    &__main {
+        padding: 10px 30px;
+
+        &:hover {
+            background-color: var(--second-color);
+            color: var(--main-color);
+        }
+    }
+
+    &__submit {
+        @include typography(14px, false, 22px, false, true);
+        background-color: var(--main-color);
+        padding: 11px 30px;
+        border: none;
+
+        &:hover {
+            background-color: var(--btn-submit-color-hover);
+        }
+    }
+}
+
+/*
+  ========================================
+  3. Шапка
+  ========================================
+*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--main-color);
+    padding-bottom: 44px;
+
+    &__logo {
+        @include typography(48px, 100, 44px, true, false);
+        border-top: 4px solid var(--main-color);
+        padding-top: 40px;
+    }
+
+    &__description {
+        font-size: 21px;
+        text-align: right;
+        margin-bottom: 22px;
+    }
+
+    &__nav {
+        @include typography(14px, 400, false, true, false);
+    }
+}
+
+/*
+  ========================================
+  4. Навигация
+  ========================================
+*/
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+/*
+  ========================================
+  5. Рекламный текст
+  ========================================
+*/
+
+.main-offer {
+    text-align: center;
+
+    &__header {
+        @include typography(36px, false, 44px, false, false);
+        color: var(--main-color);
+        margin-bottom: 22px;
+    }
+
+    &__description {
+        @include typography(21px, false, 33px, false, false);
+        margin-bottom: 22px;
+    }
+}
+
+/*
+  ========================================
+  6. Контент
+  ========================================
+*/
+
+.content {
+    background-color: var(--second-color);
+    padding: 66px 0 44px;
+}
+
+/*
+  ========================================
+  7. Подвал
+  ========================================
+*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-size: 14px;
+    padding: 44px 0;
+
+    &__copyright {
+        font-weight: 400;
+    }
+}

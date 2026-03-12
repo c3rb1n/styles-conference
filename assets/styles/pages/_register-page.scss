@@ -1,0 +1,71 @@
+@use "../common/mixins" as *;
+
+.register {
+    display: flex;
+    gap: 20px;
+
+    &__info {
+        width: 66.66%;
+    }
+
+    &__header {
+        @include typography(24px, false, 44px, false, false);
+        color: var(--main-color);
+    }
+
+    &__price {
+        @include h5-styles;
+    }
+
+    &__description {
+        margin-bottom: 22px;
+    }
+
+    &__subheader {
+        color: var(--main-color);
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        list-style: square;
+        margin: 0 0 22px 30px;
+    }
+
+    &__form {
+        margin-bottom: 22px;
+        width: 280px;
+    }
+
+    &__label {
+        color: var(--main-color);
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+        @include typography(16px, 300, 22px, false, true);
+        display: block;
+        color: var(--main-text-color);
+        padding: 5px 8px;
+        border: 1px solid var(--border-second-color);
+        border-radius: 5px;
+        margin: 5px 0 27px;
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+    }
+
+    &__select {
+        width: 60px;
+        height: 34px;
+    }
+
+    &__textarea {
+        height: 78px;
+    }
+}
